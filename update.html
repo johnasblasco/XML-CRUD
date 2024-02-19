@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Record</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        *{
+            font-weight: bolder;
+            font-family: Fredoka;
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 80px;
+            text-align: center;
+        }
+        form{
+            display: grid;
+            place-content: center;   
+        }
+        input,button{
+            font-size: larger;
+            border: none;
+            text-align: center;
+            padding: 5vh;
+            width: 50vw;
+        }
+        #s{
+            background-color: #15F5BA;
+            color: #211951;
+        }
+        #s:hover{
+            background-color: #01e645;
+            color: #fefeff;
+        }
+        #e{
+            background-color: #FF8080;
+            color: #211951;
+        }
+        #e:hover{
+            background-color: #f53535;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Update Record</h2>
+        <form action="update.php" method="post">
+            <input type="text" name="name" placeholder="Enter Name to Update" required><br>
+            <input type="text" name="new_name" placeholder="Enter New Name" required><br>
+            <input id = "s" type="submit" value="Update Record">
+            
+            <button id = "e" onclick="window.location.href='index.html'">Back to Home</button>
+        </form>
+    </div>
+</body>
+</html>

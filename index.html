@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        *{
+            
+            font-family: Fredoka;
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 80px;
+            text-align: center;
+        }
+        .crud{
+            margin-top: 10vh;
+            display: grid;
+            place-content: center;
+
+        }   
+
+        button{
+            font-weight: bolder;
+            padding: 5vh 5vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>CRUD OPERATIONS</h2>
+        <div class="crud">
+            <button onclick="window.location.href='add.html'">ADD RECORDS</button>
+            <button onclick="window.location.href='list.php'">LIST RECORDS</button>
+            <button onclick="window.location.href='update.html'">UPDATE RECORDS</button>
+            <button onclick="window.location.href='delete.html'">DELETE RECORDS</button>
+        </div>
+    </div>
+</body>
+</html>
