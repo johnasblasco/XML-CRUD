@@ -5,9 +5,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["name"])) {
     // Load the XML file
     $xml = simplexml_load_file("data.xml");
 
-    if ($xml === false) {
-        die('Error: Cannot load XML file');
-    }
 
     // Create a new user node
     $user = $xml->addChild("user");
@@ -17,10 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["name"])) {
 
     // Save the changes back to the XML file
     $result = $xml->asXML("data.xml");
-
-    if ($result === false) {
-        die('Error: Cannot save XML file');
-    }
 
     // Use JavaScript to display an alert after the PHP script execution
 
